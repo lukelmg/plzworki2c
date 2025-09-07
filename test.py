@@ -103,8 +103,8 @@ def set_channel_digital(ch: int, high: bool):
 MOTORS = {
     1: {"pwm": 0, "dir": 2},
     2: {"pwm": 1, "dir": 3},
-    3: {"pwm": 14, "dir": 12},
-    4: {"pwm": 15, "dir": 13},
+    3: {"pwm": 15, "dir": 12},
+    4: {"pwm": 14, "dir": 13},
 }
 
 
@@ -157,10 +157,10 @@ if __name__ == "__main__":
     for i in range(1, 5):
         print(f"Motor {i}: forward")
         motor_set_percent(i, 50)
-        time.sleep(2)
+        time.sleep(1)
         print(f"Motor {i}: reverse")
         motor_set_percent(i, -50)
-        time.sleep(2)
+        time.sleep(1)
         motor_set_percent(i, 0)
         time.sleep(0.5)
 
